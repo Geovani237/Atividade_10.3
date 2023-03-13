@@ -1,56 +1,63 @@
 <?php include_once "header.php"; ?>
-    <form action="inserir_cliente.php" method="POST">
-        <h1>Cadastro de Clientes</h1>    
-        <label>
-            CPF:
-            <input type="number" name="cpf">
-        </label><br>
+<form action="inserir_cliente.php" method="POST">
+    <div class="container">
+        <div class="row">
+            <h1>Cadastro de Clientes</h1>
+            <div class="col-6">
+                CPF:
+                <input class="form-control" type="number" name="cpf">
+            </div>
+            <div class="col-6">
+                Nome:
+                <input class="form-control" type="text" name="nome">
+            </div>
 
-        <label>
-            Nome:
-            <input type="text" name="nome">
-        </label><br>
 
-        <label>
-            Rua:
-            <input type="text" name="rua">
-        </label><br>
+            <div class="col-4">
+                Rua:
+                <input class="form-control" type="text" name="rua">
+            </div>
 
-        <label>
-            Número:
-            <input type="text" name="numero">
-        </label><br>
+            <div class="col-4">
+                Número:
+                <input class="form-control" type="text" name="numero">
+            </div>
 
-        <label>
-            Bairro:
-            <input type="text" name="bairro">
-        </label><br>
+            <div class="col-4">
+                Bairro:
+                <input class="form-control" type="text" name="bairro">
+            </div>
 
-        <label>
-            Cidade:
-            <input type="text" name="cidade">
-        </label><br>
+            <div class="col-6">
+                Cidade:
+                <input class="form-control" type="text" name="cidade">
+            </div>
 
-        <label>
-            Estado:
-            <input type="text" name="estado">
-        </label><br>
+            <div class="col-6">
+                Estado:
+                <input class="form-control" type="text" name="estado">
+            </div>
 
-        <label>
-            E-mail:
-            <input type="email" name="email">
-        </label><br>
+            <div class="col">
+                E-mail:
+                <input class="form-control" type="email" name="email">
+                </div>
 
-        <label>
-            Telefone:
-            <input type="text" name="telefone">
-        </label><br>
+            <div class="col">
+                Telefone:
+                <input class="form-control" type="text" name="telefone">
+        
+            </div>
 
-        <label>
-            Senha:
-            <input type="password" name="senha">
-        </label><br>
+            <div class="col">
+                Senha:
+                <input class="form-control" type="password" name="senha">
+            </div>
+            
+            <button class="btn btn-primary" type="submit">Enviar</button>
 
-        <button type="submit">Enviar</button>
-    </form>
-    <?php include_once "footer.php"; ?>
+        </div>
+
+    </div>
+</form>
+<?php include_once "footer.php"; ?>
